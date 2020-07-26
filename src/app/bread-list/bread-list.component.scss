@@ -1,0 +1,25 @@
+.bread-list {
+  display: flex;
+  &__img {
+    width: 16px;
+    height: 16px;
+  }
+  &__first {
+    padding-left: 30px;
+    display: flex;
+    font-size: 11px;
+    font-weight: bold;
+  }
+  &__second {
+    padding-left: 18px;
+    display: flex;
+    font-size: 11px;
+    color: #a6adb4;
+    font-weight: bold;
+  }
+}
+
+.bread-list__first::after {
+  content: '/';
+  margin-left: 18px;
+}

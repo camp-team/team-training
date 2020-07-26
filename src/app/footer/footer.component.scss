@@ -1,0 +1,16 @@
+
+.footer {
+  font-family: "Acumin Pro";
+  width: 1440px;
+  height: 200px;
+  background: #A6ADB4;
+  &__section {
+    padding: 58px 0 60px 142px;
+  }
+  &__logo {
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+  }
+}

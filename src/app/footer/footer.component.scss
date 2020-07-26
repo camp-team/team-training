@@ -1,6 +1,7 @@
 
 .footer {
   font-family: "Acumin Pro";
+  display: flex;
   width: 1440px;
   height: 200px;
   background: #A6ADB4;
@@ -32,4 +33,27 @@
     text-decoration: none;
     color: inherit;
   }
+}
+
+.form {
+    color: #CBD0D3;
+    padding: 58px 139.2px 77px 219.8px;
+    &__input {
+      position: relative;
+      width: 262px;
+      background: inherit;
+      padding: 14px 0 16px 20px;
+      margin-bottom: 16px;
+      border-color: inherit;
+      border-radius: 5px;
+    }
+    &__btn {
+      position: absolute;
+    }
+    &__content {
+      margin: 0;
+      font-family: "Helvetica";
+      font-size: 11px;
+
+    }
 }

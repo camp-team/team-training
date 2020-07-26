@@ -2,18 +2,23 @@
   <div class="footer__section">
     <h1 class="footer__logo">LOGO</h1>
     <ul class="footer__menu">
-      <a href="" class="footer__list"><li>Home</li></a>
-      <a href="" class="footer__list"><li>About</li></a>
-      <a href="" class="footer__list"><li>Testimonials</li></a>
-      <a href="" class="footer__list"><li>Discovery</li></a>
-      <a href="" class="footer__list"><li>Help</li></a>
-      <a href="" class="footer__list"><li>Advertise</li></a>
-      <a href="" class="footer__list"><li>Photos</li></a>
-      <a href="" class="footer__list"><li>Terms</li></a>
-      <a href="" class="footer__list"><li>Integrations</li></a>
-      <a href="" class="footer__list"><li>Contact</li></a>
-      <a href="" class="footer__list"><li>Guidlines</li></a>
-      <a href="" class="footer__list"><li>Careers</li></a>
+      <ng-container *ngFor="let list of lists">
+        <a href="" class="footer__list"
+          ><li>{{ list }}</li></a
+        >
+      </ng-container>
     </ul>
   </div>
+
+  <div class="form">
+    <div class="form__inputs">
+      <input class="form__input" type="text" placeholder="Email">
+      <div class="btn">
+        <img src="http://www.w3.org/2000/svg" alt="">
+      </div>
+    </div>
+    <p class="form__content">Stay in touch with us for the freshest products!</p>
+  </div>
+
+  
 </div>

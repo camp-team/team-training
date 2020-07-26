@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PasingComponent implements OnInit {
 
+  isPage: boolean;
 
   constructor() { }
 

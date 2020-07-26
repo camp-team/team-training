@@ -3,12 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PasingComponent } from './pasing/pasing.component';
 
 
-const routes: Routes = [
-  {
-    path: '',
-    component: PasingComponent
-  },
-];
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

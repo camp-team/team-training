@@ -1,28 +1,47 @@
+// @import "mixins";
+
+@mixin sp {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
 
 .footer {
-  font-family: "Acumin Pro";
+  font-family: 'Acumin Pro';
   display: flex;
+  flex-wrap: wrap;
   width: 1440px;
   height: 200px;
-  background: #A6ADB4;
+  background: #a6adb4;
+  @include sp {
+    width: 768px;
+    height: 316px;
+  }
   &__section {
     display: flex;
     // justify-content: space-between;
     padding: 58px 0 60px 142px;
+    @include sp {
+      justify-content: space-between;
+      padding: 58px 121px 0 80px;
+    }
   }
   &__logo {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 13px;
     font-weight: bold;
     margin: 0;
     margin-right: 58.9px;
+    @include sp {
+      margin-right: 287px;
+    }
   }
   &__menu {
-    font-family: "Helvetica";
+    font-family: 'Helvetica';
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(3,1fr);
-    color: #CBD0D3;
+    grid-template-columns: repeat(3, 1fr);
+    color: #cbd0d3;
     font-size: 13px;
     font-weight: bold;
     list-style: none;
@@ -33,27 +52,46 @@
     text-decoration: none;
     color: inherit;
   }
+  &__icons {
+    // display: flex;
+    padding: 56px 138.8px 128px 139.2px;
+  }
+  &__icon {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .form {
-    color: #CBD0D3;
-    padding: 58px 139.2px 77px 219.8px;
-    &__input {
-      position: relative;
-      width: 262px;
-      background: inherit;
-      padding: 14px 0 16px 20px;
-      margin-bottom: 16px;
-      border-color: inherit;
-      border-radius: 5px;
-    }
-    &__btn {
-      position: absolute;
-    }
-    &__content {
-      margin: 0;
-      font-family: "Helvetica";
-      font-size: 11px;
-
-    }
+  box-sizing: border-box;
+  color: #cbd0d3;
+  padding: 58px 139.2px 77px 219.8px;
+  &__inputs {
+    position: relative;
+  }
+  &__input {
+    position: relative;
+    width: 262px;
+    background: inherit;
+    padding: 14px 0 16px 20px;
+    margin-bottom: 16px;
+    border-color: inherit;
+    border-radius: 5px;
+  }
+  &__btn {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 12px;
+    padding-right: 19px;
+  }
+  &__content {
+    margin: 0;
+    font-family: 'Helvetica';
+    font-size: 11px;
+  }
+  @include sp {
+    padding: 50px 0 60px 80px;
+  }
 }

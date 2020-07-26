@@ -3,18 +3,23 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import { NewsComponent } from './news/news.component';
 import { FooterComponent } from './footer/footer.component';
+import { BreadListComponent } from './bread-list/bread-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent
+    BreadListComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

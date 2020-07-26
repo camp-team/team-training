@@ -9,6 +9,9 @@
   display: grid;
   grid-template-columns: 1fr 640px;
   position: relative;
+  &:first-child {
+    background: black center/cover;
+  }
   @media screen and (max-width: 750px) {
     grid-template-columns: 1fr;
   }

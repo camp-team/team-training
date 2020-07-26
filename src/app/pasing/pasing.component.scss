@@ -16,12 +16,14 @@ li {
 
 li:hover {
   color: #202124;
-  border-bottom: 1px solid #FA6980;
+  font-weight: bold;
+  border-bottom: 2px solid #FA6980;
 }
 
 li:active {
+  font-weight: bold;
   color: #202124;
-  border-bottom: 1px solid #FA6980;
+  border-bottom: 2px solid #FA6980;
 }
 
 img {

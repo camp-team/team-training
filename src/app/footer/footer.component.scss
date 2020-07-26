@@ -5,6 +5,8 @@
   height: 200px;
   background: #A6ADB4;
   &__section {
+    display: flex;
+    // justify-content: space-between;
     padding: 58px 0 60px 142px;
   }
   &__logo {
@@ -12,5 +14,18 @@
     font-size: 13px;
     font-weight: bold;
     margin: 0;
+    margin-right: 58.9px;
+  }
+  &__menu {
+    font-family: "Helvetica";
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    color: #CBD0D3;
+    font-size: 13px;
+    font-weight: bold;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 }

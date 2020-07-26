@@ -1,0 +1,37 @@
+<div class="header">
+  <a class="drawer-button" (click)="isShowDrower()"><img class="header__drawer-icon"
+      src="/assets/drower-button.png"></a>
+  <h1 class="header__logo">LOGO</h1>
+  <div class="spacer"></div>
+  <nav class="header__nav">
+    <ul class="nav-list">
+      <li class="nav-list__item"><a href="">home</a></li>
+      <li class="nav-list__item"><a href="">discovery</a></li>
+      <li class="nav-list__item"><a href="">photos</a></li>
+      <li class="nav-list__item"><a href="">contact</a></li>
+      <li class="nav-list__item"><a href="" class="nav-list__user-icon"><img src="/assets/user-icon.png"></a></li>
+    </ul>
+  </nav>
+  <a href="" class="header__user-button"><img class="header__user-icon" src="/assets/user-icon.png"></a>
+</div>
+<div class="drawer" *ngIf="isDrower">
+  <div class="drawer__wrap">
+    <div class="drawer__logo">
+      LOGO
+    </div>
+    <div class="drawer__content">
+      <ul class="drawer-list">
+        <li class="drawer-list__item drawer-list__item--active"><a href=""><img src="/assets/home-icon.png">home</a>
+        </li>
+        <li class="drawer-list__item"><a href=""><img src="/assets/discover-icon.png">discovery</a></li>
+        <li class="drawer-list__item"><a href=""><img src="/assets/photos-icon.png">photos</a>
+        </li>
+        <li class="drawer-list__item"><a href=""><img src="/assets/mail-icon.png">contact</a>
+        </li>
+        <li class="drawer-list__item"><a href=""><img class="drawer-list__user-icon"
+              src="/assets/user-icon.png">profile</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

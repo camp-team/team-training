@@ -12,13 +12,21 @@
 
   <div class="form">
     <div class="form__inputs">
-      <input class="form__input" type="text" placeholder="Email">
-      <div class="btn">
-        <img src="http://www.w3.org/2000/svg" alt="">
+      <input class="form__input" type="text" placeholder="Email" />
+      <div class="form__btn">
+        <img class="form__btn" src="assets/send.svg" alt="" />
       </div>
     </div>
-    <p class="form__content">Stay in touch with us for the freshest products!</p>
+    <p class="form__content">
+      Stay in touch with us for the freshest products!
+    </p>
   </div>
 
-  
+  <div class="footer__icons">
+    <ng-container *ngFor="let icon of icons">
+      <div class="footer__icon">
+        <img src="assets/{{ icon }}.svg" alt="" class="footer__img" />
+      </div>
+    </ng-container>
+  </div>
 </div>

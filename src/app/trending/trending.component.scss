@@ -1,0 +1,75 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+.container {
+  padding: 24px;
+  background-color: #F6F8F9;
+}
+
+.card {
+  border-radius: 6px;
+  overflow: hidden;
+  width: 360px;
+  margin: 40px;
+  &__cover {
+    padding-bottom: 180px;
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    &--image-1 {
+      background-image: url('src/assets/images/Image.png');
+    }
+    &--image-2 {
+      background-image: url('src/assets/images/annie-spratt-216507-unsplash.png');
+    }
+    &--image-3 {
+      background-image: url('src/assets/images/carlos-hevia-628890-unsplash.png');
+    }
+  }
+  &__link {
+    text-decoration: none;
+  }
+  &__contents {
+    padding: 40px;
+    background-color: #fff;
+  }
+  &__title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 4px;
+    color: #202124;
+  }
+  &__text {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #A6ADB4;
+    margin-bottom: 10px;
+  }
+  &__date {
+    display: flex;
+    color: #A6ADB4;
+    font-size: 13px;
+  }
+  &__time {
+    margin: 0;
+    margin-left: 10px;
+    font-family: Helvetica;
+    font-style: oblique;
+    font-weight: lighter;
+    }
+  &__content {
+    flex: 1;
+  }
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 750px) {
+    display: block;
+    .desk-top {
+      display: none;
+    }
+  }
+}

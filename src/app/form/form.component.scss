@@ -1,3 +1,10 @@
+label {
+  color: #202124;
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
 p {
   color: #202124;
   font-size: 13px;
@@ -20,7 +27,7 @@ select {
   color: #a6adb4;
   background-repeat: no-repeat;
   background-image: url('/assets/images/dropdown.svg');
-  background-position: calc(100% - 15px) 50%, calc(100% - 10px) 50%;
+  background-position: right 5% bottom 45%;
 }
 
 .input {

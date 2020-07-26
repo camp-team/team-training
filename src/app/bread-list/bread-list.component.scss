@@ -19,7 +19,9 @@
   }
 }
 
-.bread-list__first::after {
-  content: '/';
-  margin-left: 18px;
+.bread-list {
+  &__first::after {
+    content: '/';
+    margin-left: 18px;
+  }
 }

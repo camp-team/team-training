@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { NewsComponent } from './news/news.component';
 
 import { BreadListComponent } from './bread-list/bread-list.component';
+import { HeadingComponent } from './heading/heading.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BreadListComponent,
-    NewsComponent
+    NewsComponent,
+    HeadingComponent
   ],
   imports: [
     BrowserModule,

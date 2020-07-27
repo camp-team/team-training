@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PaginatorComponent } from './paginator/paginator.component';
 import { NewsComponent } from './news/news.component';
 import { BreadListComponent } from './bread-list/bread-list.component';
+import { HeadingComponent } from './heading/heading.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { BreadListComponent } from './bread-list/bread-list.component';
     PaginatorComponent,
     NewsComponent,
     BreadListComponent,
+    HeadingComponent
   ],
   imports: [
     BrowserModule,

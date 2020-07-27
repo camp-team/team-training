@@ -5,15 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TrendingComponent } from './trending/trending.component';
 import { NewsComponent } from './news/news.component';
-
 import { BreadListComponent } from './bread-list/bread-list.component';
+import { HeadingComponent } from './heading/heading.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TrendingComponent,
     BreadListComponent,
-    NewsComponent
+    NewsComponent,
+    HeadingComponent
   ],
   imports: [
     BrowserModule,
@@ -22,4 +23,4 @@ import { BreadListComponent } from './bread-list/bread-list.component';
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

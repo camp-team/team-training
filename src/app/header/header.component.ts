@@ -1,28 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
-  isDrower: boolean;
+export class HeaderComponent implements OnInit, AfterViewInit {
+  header: HTMLElement;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  isClassActive(event) {
-    const target = event.target.value;
-    target.addClassList('active');
+  ngAfterViewInit(): void {
+    this.header = document.getElementById('js-header');
   }
 
-  isShowDrower() {
-    if (this.isDrower) {
-      this.isDrower = false;
-    } else {
-      this.isDrower = true;
-    }
+  hamburgerEvent() {
+    this.header.classList.toggle('drawer-open');
+  }
+
+  bgEvent() {
+    this.header.classList.remove('drawer-open');
   }
 }

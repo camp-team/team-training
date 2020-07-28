@@ -1,37 +1,27 @@
-<div class="header">
-  <a class="drawer-button" (click)="isShowDrower()"><img class="header__drawer-icon"
-      src="/assets/drower-button.png"></a>
-  <h1 class="header__logo">LOGO</h1>
-  <div class="spacer"></div>
-  <nav class="header__nav">
-    <ul class="nav-list">
-      <li class="nav-list__item"><a href="">home</a></li>
-      <li class="nav-list__item"><a href="">discovery</a></li>
-      <li class="nav-list__item"><a href="">photos</a></li>
-      <li class="nav-list__item"><a href="">contact</a></li>
-      <li class="nav-list__item"><a href="" class="nav-list__user-icon"><img src="/assets/user-icon.png"></a></li>
+<header class="header" id="js-header">
+  <h1 class="logo">LOGO</h1>
+  <span class="spacer"></span>
+  <div class="hamburger" (click)="hamburgerEvent()">
+    <span class="hamburger__line hamburger__line--1"></span>
+    <span class="hamburger__line hamburger__line--2"></span>
+    <span class="hamburger__line hamburger__line--3"></span>
+  </div>
+  <nav class="global-nav">
+    <h1 class="logo logo--sp-side">LOGO</h1>
+    <ul class="global-nav__list">
+      <li class="global-nav__item"><a href=""><img src="/assets/home-icon.png" class="global-nav__sp-img">HOME</a></li>
+      <li class="global-nav__item"><a href=""><img src="/assets/discover-icon.png"
+            class="global-nav__sp-img">DISCOVERY</a></li>
+      <li class="global-nav__item"><a href=""><img src="/assets/photos-icon.png" class="global-nav__sp-img">PHOTOS</a>
+      </li>
+      <li class="global-nav__item"><a href=""><img src="/assets/mail-icon.png" class="global-nav__sp-img">CONTACT</a>
+      </li>
+      <li class="global-nav__item global-nav__item--sp"><a href=""><img src="/assets/user-icon.png"
+            class="global-nav__sp-img">PROFILE</a>
+      </li>
     </ul>
   </nav>
-  <a href="" class="header__user-button"><img class="header__user-icon" src="/assets/user-icon.png"></a>
-</div>
-<div class="drawer" *ngIf="isDrower">
-  <div class="drawer__wrap">
-    <div class="drawer__logo">
-      LOGO
-    </div>
-    <div class="drawer__content">
-      <ul class="drawer-list">
-        <li class="drawer-list__item"><a href=""><img src="/assets/home-icon.png">home</a>
-        </li>
-        <li class="drawer-list__item"><a href=""><img src="/assets/discover-icon.png">discovery</a></li>
-        <li class="drawer-list__item"><a href=""><img src="/assets/photos-icon.png">photos</a>
-        </li>
-        <li class="drawer-list__item"><a href=""><img src="/assets/mail-icon.png">contact</a>
-        </li>
-        <li class="drawer-list__item"><a href=""><img class="drawer-list__user-icon"
-              src="/assets/user-icon.png">profile</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+  <h1 class="logo logo--sp-nav">LOGO</h1>
+  <a href="" class="user-icon" [style.background-image]="'url('+ '/assets/user-icon.png' +')'"></a>
+  <div class="bg-blur" (click)="bgEvent()"></div>
+</header>

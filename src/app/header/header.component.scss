@@ -41,6 +41,18 @@
     padding: 0;
     list-style: none;
   }
+  &__item {
+    position: relative;
+  }
+  &__item--home {
+    &:hover {
+      .home-menu {
+        top: 33px;
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
   &__item a {
     display: block;
     margin-right: 27px;
@@ -60,6 +72,26 @@
   }
   &__sp-img {
     display: none;
+  }
+}
+
+.home-menu {
+  position: absolute;
+  padding: 0;
+  top: 33px;
+  left: -20px;
+  transition: all 0.2s ease;
+  list-style: none;
+  background-color: #f6f8f9;
+  visibility: hidden;
+  opacity: 0;
+  &__item {
+    padding: 20px;
+  }
+  &__item a {
+    height: 10px;
+    width: 160px;
+    margin: 0;
   }
 }
 
@@ -173,6 +205,10 @@
         top: 12px;
       }
     }
+  }
+
+  .home-menu {
+    display: none;
   }
 
   .user-icon {

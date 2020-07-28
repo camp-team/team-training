@@ -7,18 +7,17 @@ import { NewsComponent } from './news/news.component';
 
 import { BreadListComponent } from './bread-list/bread-list.component';
 import { HeadingComponent } from './heading/heading.component';
+import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeroComponent,
     BreadListComponent,
     NewsComponent,
-    HeadingComponent
+    HeadingComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

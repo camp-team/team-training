@@ -10,14 +10,11 @@ import { BreadListComponent } from './bread-list/bread-list.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeroComponent
+    HeroComponent,
     BreadListComponent,
-    NewsComponent
+    NewsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

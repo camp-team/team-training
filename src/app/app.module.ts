@@ -7,13 +7,15 @@ import { NewsComponent } from './news/news.component';
 
 import { BreadListComponent } from './bread-list/bread-list.component';
 import { HeadingComponent } from './heading/heading.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BreadListComponent,
     NewsComponent,
-    HeadingComponent
+    HeadingComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

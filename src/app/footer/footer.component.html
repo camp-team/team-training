@@ -1,0 +1,38 @@
+<div class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__left">
+        <div class="footer__section">
+          <h1 class="footer__logo">LOGO</h1>
+          <ul class="footer__menu">
+            <ng-container *ngFor="let list of lists">
+              <a href="" class="footer__list"
+                ><li>{{ list }}</li></a
+              >
+            </ng-container>
+          </ul>
+        </div>
+
+        <div class="form">
+          <div class="form__inputs">
+            <input class="form__input" type="text" placeholder="Email" />
+            <div class="form__btn">
+              <img class="form__btn" src="assets/images/send.svg" alt="" />
+            </div>
+          </div>
+          <p class="form__content">
+            Stay in touch with us for the freshest products!
+          </p>
+        </div>
+      </div>
+
+      <div class="footer__icons">
+        <ng-container *ngFor="let icon of icons">
+          <div class="footer__icon">
+            <img src="assets/images/{{ icon }}.svg" alt="" class="footer__img" />
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

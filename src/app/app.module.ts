@@ -3,9 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeroComponent } from './hero/hero.component';
 import { NewsComponent } from './news/news.component';
+
 import { BreadListComponent } from './bread-list/bread-list.component';
+import { HeadingComponent } from './heading/heading.component';
+import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,7 @@ import { BreadListComponent } from './bread-list/bread-list.component';
     HeroComponent,
     BreadListComponent,
     NewsComponent,
+    HeadingComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

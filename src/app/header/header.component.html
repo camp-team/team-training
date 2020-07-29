@@ -5,11 +5,17 @@
   <p class="header__logo">
     <a href="">LOGO</a>
   </p>
-  <div class="header__nav">
+  <div class="header__nav open">
     <nav class="gnav">
+      <p class="sp-only gnav__logo">
+        <a href="">LOGO</a>
+      </p>
       <ul class="gnav__list">
         <li class="gnav__item current">
-          <a href="" class="gnav__link">Home</a>
+          <a href="" class="gnav__link">
+            <img src="/assets/images/icon_home.svg" alt="" class=" sp-only gnav__icon">
+            Home
+          </a>
           <div class="pc-only subnav">
             <ul class="subnav__list">
               <li class="subnav__item">
@@ -34,16 +40,31 @@
           </div>
         </li>
         <li class="gnav__item">
-          <a href="" class="gnav__link">Discovery</a>
+          <a href="" class="gnav__link">
+            <img src="/assets/images/icon_discover.svg" alt="" class=" sp-only gnav__icon">
+            Discovery
+          </a>
         </li>
         <li class="gnav__item">
-          <a href="" class="gnav__link">Photos</a>
+          <a href="" class="gnav__link">
+            <img src="/assets/images/icon_photos.svg" alt="" class=" sp-only gnav__icon">
+            Photos
+          </a>
         </li>
         <li class="gnav__item">
-          <a href="" class="gnav__link">Contact</a>
+          <a href="" class="gnav__link">
+            <img src="/assets/images/icon_contact.svg" alt="" class=" sp-only gnav__icon">
+            Contact
+          </a>
+        </li>
+        <li class="sp-only gnav__item">
+          <a href="" class="gnav__link gnav__profile">
+            <div class="gnav__user"></div>
+            <span>Profile</span>
+          </a>
         </li>
       </ul>
     </nav>
   </div>
-  <div class="header__user"></div>
+  <a href="" class="header__user"></a>
 </header>

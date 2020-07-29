@@ -19,8 +19,8 @@
   // padding: 58px 0 60px;
   background: #a6adb4;
   @include sp {
-    width: 768px;
-    height: 316px;
+    // width: 768px;
+    // height: 316px;
   }
   &__wrapper {
     font-family: 'Acumin Pro';
@@ -41,7 +41,7 @@
     // padding: 58px 0 60px 142px;
     @include sp {
       justify-content: space-between;
-      padding: 58px 121px 0 80px;
+      // padding: 58px 121px 0 80px;
     }
   }
   &__logo {
@@ -51,7 +51,7 @@
     margin: 0;
     margin-right: 58.9px;
     @include sp {
-      margin-right: 287px;
+      margin-right: 0;
     }
   }
   &__menu {
@@ -79,6 +79,9 @@
     margin-right: 32px;
     width: 16px;
     height: 16px;
+    @include sp {
+      display: none;
+    }
   }
 }
 
@@ -86,10 +89,13 @@
   box-sizing: border-box;
   color: #cbd0d3;
   // padding: 58px 139.2px 77px 219.8px;
+  // max-width: 415px;
+  // margin: 0 auto;
   &__inputs {
     position: relative;
   }
   &__input {
+    height: 40px;
     box-sizing: border-box;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -127,6 +133,12 @@
     font-size: 11px;
   }
   @include sp {
-    padding: 50px 0 60px 80px;
+    // padding: 50px 0 60px 80px;
+    padding-top: 50px;
   }
+}
+
+input::placeholder {
+  color:#CBD0D3;
+  font-size: 13px;
 }

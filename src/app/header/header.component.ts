@@ -5,23 +5,19 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit, AfterViewInit {
-  header: HTMLElement;
+export class HeaderComponent implements OnInit {
+  isOpen: boolean;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  ngAfterViewInit(): void {
-    this.header = document.getElementById('js-header');
+  openDrawer() {
+    this.isOpen = true;
   }
 
-  hamburgerEvent() {
-    this.header.classList.toggle('drawer-open');
-  }
-
-  bgEvent() {
-    this.header.classList.remove('drawer-open');
+  closeDrawer() {
+    this.isOpen = false;
   }
 }

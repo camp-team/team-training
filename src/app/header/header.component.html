@@ -1,16 +1,14 @@
-<header class="header" id="js-header">
+<header class="header">
+  <div class="drawer-button" (click)="openDrawer()">
+    <img src="/assets/menu-icon.svg">
+  </div>
   <h1 class="logo">LOGO</h1>
   <span class="spacer"></span>
-  <div class="hamburger" (click)="hamburgerEvent()">
-    <span class="hamburger__line hamburger__line--1"></span>
-    <span class="hamburger__line hamburger__line--2"></span>
-    <span class="hamburger__line hamburger__line--3"></span>
-  </div>
-  <nav class="global-nav">
+  <nav class="global-nav" [class.global-nav--active]="isOpen">
     <h1 class="logo logo--sp-side">LOGO</h1>
     <ul class="global-nav__list">
       <li class="global-nav__item global-nav__item--home">
-        <a href=""><img src="/assets/home-icon.svg" class="global-nav__sp-img">HOME</a>
+        <a href=""><img src="/assets/home-icon.svg" class="global-nav__img">HOME</a>
         <ul class="home-menu">
           <li class="home-menu__item"><a href="">WORLD NEWS</a></li>
           <li class="home-menu__item"><a href="">TRAVEL</a></li>
@@ -21,20 +19,19 @@
         </ul>
       </li>
       <li class="global-nav__item">
-        <a href=""><img src="/assets/discover-icon.svg" class="global-nav__sp-img">DISCOVERY</a>
+        <a href=""><img src="/assets/discover-icon.svg" class="global-nav__img">DISCOVERY</a>
       </li>
       <li class="global-nav__item">
-        <a href=""><img src="/assets/photos-icon.svg" class="global-nav__sp-img">PHOTOS</a>
+        <a href=""><img src="/assets/photos-icon.svg" class="global-nav__img">PHOTOS</a>
       </li>
       <li class="global-nav__item">
-        <a href=""><img src="/assets/mail-icon.svg" class="global-nav__sp-img">CONTACT</a>
+        <a href=""><img src="/assets/mail-icon.svg" class="global-nav__img">CONTACT</a>
       </li>
-      <li class="global-nav__item global-nav__item--sp">
-        <a href=""><img src="/assets/user-icon.png" class="global-nav__sp-img">PROFILE</a>
+      <li class="global-nav__item">
+        <a href=""><img src="/assets/user-icon.png" class="global-nav__img">PROFILE</a>
       </li>
     </ul>
   </nav>
-  <h1 class="logo logo--sp-nav">LOGO</h1>
   <a href="" class="user-icon" [style.background-image]="'url('+ '/assets/user-icon.png' +')'"></a>
-  <div class="bg-blur" (click)="bgEvent()"></div>
+  <div class="bg-blur" (click)="closeDrawer()" [class.bg-blur--active]="isOpen"></div>
 </header>

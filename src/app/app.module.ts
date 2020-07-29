@@ -9,6 +9,7 @@ import { NewsComponent } from './news/news.component';
 import { BreadListComponent } from './bread-list/bread-list.component';
 import { HeadingComponent } from './heading/heading.component';
 import { HeroComponent } from './hero/hero.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeroComponent } from './hero/hero.component';
     BreadListComponent,
     NewsComponent,
     HeadingComponent,
-    PaginatorComponent
+    PaginatorComponent,
+    HeaderComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

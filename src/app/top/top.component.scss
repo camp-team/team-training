@@ -57,7 +57,13 @@
 
 .trend-grid {
   display: grid;
+  gap: 40px;
   @media screen and (min-width: 750px) {
     grid-template-columns: repeat(3, 1fr);
+  }
+  @media screen and (max-width: 750px) {
+    > *:last-child {
+      display: none;
+    }
   }
 }

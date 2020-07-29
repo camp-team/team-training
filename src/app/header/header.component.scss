@@ -50,6 +50,10 @@ a {
     line-height: calc( 20 / 13 );
     a {
       display: block;
+      transition: opacity .4s;
+      &:hover {
+        opacity: .5;
+      }
     }
     @media screen and (max-width: 750px) {
       color: #A6ADB4;

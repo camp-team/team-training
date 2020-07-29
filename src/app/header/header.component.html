@@ -1,11 +1,12 @@
 <header class="header">
-  <a href="" class="sp-only header__btn-menu">
+  <button class="sp-only header__btn-menu" (click)="openMenu()">
     <img src="/assets/images/icon_menu.svg" alt="">
-  </a>
+  </button>
   <p class="header__logo">
     <a href="">LOGO</a>
   </p>
-  <div class="header__nav open">
+  <div class="sp-only header__overlay" (click)="closeMenu()" [class.open]="isOpened"></div>
+  <div class="header__nav" [class.open]="isOpened">
     <nav class="gnav">
       <p class="sp-only gnav__logo">
         <a href="">LOGO</a>

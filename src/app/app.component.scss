@@ -10,7 +10,7 @@
   grid-template-columns: 1fr 640px;
   position: relative;
   &__bg {
-    background: url(/assets/hero.jpg) center/cover;
+    background: url(~/assets/hero.jpg) center/cover;
   }
   @media screen and (max-width: 750px) {
     grid-template-columns: 1fr;

@@ -1,43 +1,5 @@
 <div class="placeholder">header</div>
-<div class="container">
-  <app-bread-list></app-bread-list>
-</div>
 <main>
-  <div class="hero-grid">
-    <div class="hero-grid__main">
-      <div class="container">
-        <app-hero></app-hero>
-      </div>
-    </div>
-    <div class="hero-grid__bg"></div>
-    <div class="hero-grid__news"><app-news></app-news></div>
-  </div>
-  <div class="container">
-
-    <app-heading>Treading</app-heading>
-
-    <div class="trend-grid">
-      <app-trending></app-trending>
-      <app-trending></app-trending>
-      <app-trending></app-trending>
-    </div>
-
-    <app-heading>Happening Now</app-heading>
-
-    <div class="now-grid">
-      <div class="card-grid">
-        <div class="placeholder">card-large</div>
-        <div class="placeholder">card-large</div>
-      </div>
-      <div class="divider"></div>
-      <div class="card-grid">
-        <div class="placeholder">card-small</div>
-        <div class="placeholder">card-small</div>
-        <div class="placeholder">card-small</div>
-      </div>
-    </div>
-  </div>
+  <router-outlet></router-outlet>
 </main>
-<app-paginator></app-paginator>
 <div class="placeholder">footer</div>
-

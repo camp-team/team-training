@@ -12,19 +12,14 @@
     <p class="comment__time-text">{{ dummy.updatedAt | relativetime }}</p>
   </div>
   <ng-container *ngIf="isPlaying; else thumbnail">
-    <ng-container *ngIf="dummy.videoUrl as videoUrl">
-      <video
-        class="comment__video"
-        [src]="videoUrl"
-        [poster]="dummy.thumbnailUrl"
-        controls
-      ></video>
+    <ng-container *ngIf="dummy?.videoUrl as videoUrl">
+      <video class="comment__video" [src]="videoUrl" autoplay controls></video>
     </ng-container>
   </ng-container>
   <ng-template #thumbnail>
     <figure
       class="comment__thumbnail"
-      [style.background-image]="'url(' + dummy.thumbnailUrl + ')'"
+      [style.background-image]="'url(' + dummy?.thumbnailUrl + ')'"
       (click)="start()"
     >
       <img

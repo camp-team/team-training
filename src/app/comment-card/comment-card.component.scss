@@ -50,14 +50,14 @@
     margin: 40px 0 0 0;
     vertical-align: bottom;
     border-radius: 6px;
-    height: 300px;
+    height: auto;
     width: 100%;
   }
   &__thumbnail {
     position: relative;
     margin: 40px 0 0 0;
     padding: 0;
-    padding-top: 41%;
+    padding-top: calc(300 / 730 * 100%);
     vertical-align: bottom;
     border-radius: 6px;
     background: center/cover;

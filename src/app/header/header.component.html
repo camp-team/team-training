@@ -3,17 +3,17 @@
     <img src="assets/images/icon-menu.svg" alt="メニューを開く">
   </button>
   <p class="header__logo">
-    <a href="">LOGO</a>
+    <a routerLink="/" (click)="isOpened = false">LOGO</a>
   </p>
   <div class="sp-only header__overlay" (click)="isOpened = false" [class.open]="isOpened"></div>
   <div class="header__nav" [class.open]="isOpened">
     <nav class="gnav">
       <p class="sp-only gnav__logo">
-        <a href="">LOGO</a>
+        <a routerLink="/" (click)="isOpened = false">LOGO</a>
       </p>
       <ul class="gnav__list">
         <li class="gnav__item current">
-          <a href="" class="gnav__link">
+          <a routerLink="/" (click)="isOpened = false" class="gnav__link">
             <img src="assets/images/icon-home.svg" alt="" class="sp-only gnav__icon">
             Home
           </a>

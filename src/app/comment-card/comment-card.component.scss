@@ -48,8 +48,11 @@
     margin: 40px 0 0 0;
     vertical-align: bottom;
     border-radius: 6px;
-    height: auto;
+    height: 300px;
     width: 100%;
+    @media screen and (max-width: 375px) {
+      height: 180px;
+    }
   }
   &__thumbnail {
     position: relative;
@@ -63,6 +66,7 @@
       cursor: pointer;
     }
     @media screen and (max-width: 375px) {
+      padding-top: 180px;
     }
   }
   &__video-play-btn {

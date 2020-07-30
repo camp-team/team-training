@@ -28,6 +28,7 @@
     background-color: #fa6980;
   }
   &__avatar {
+    object-fit: cover;
     box-sizing: border-box;
     display: block;
     width: 40px;

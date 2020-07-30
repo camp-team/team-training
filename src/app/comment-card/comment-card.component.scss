@@ -1,6 +1,4 @@
 .comment {
-  box-sizing: border-box;
-  padding: 24px;
   max-width: 730px;
   &__header {
     display: flex;
@@ -63,6 +61,8 @@
     background: center/cover;
     &:hover {
       cursor: pointer;
+    }
+    @media screen and (max-width: 375px) {
     }
   }
   &__video-play-btn {

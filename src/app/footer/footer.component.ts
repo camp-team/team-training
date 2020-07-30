@@ -21,7 +21,7 @@ export class FooterComponent implements OnInit {
     'Careers',
   ];
 
-  icons: string[] = ['instagram', 'twitter', 'パス 1', 'web'];
+  icons: string[] = ['instagram', 'twitter', 'facebook', 'web'];
 
   constructor() {}
 

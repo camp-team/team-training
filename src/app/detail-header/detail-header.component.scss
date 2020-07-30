@@ -2,7 +2,7 @@
   max-width: calc(580px + 580px);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 500px 500px;
+  grid-template-rows: 500px;
   @media screen and (max-width: 750px) {
     grid-template-columns: 1fr;
     grid-template-rows: 400px 400px;

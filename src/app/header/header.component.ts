@@ -12,12 +12,4 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  openDrawer() {
-    this.isOpen = true;
-  }
-
-  closeDrawer() {
-    this.isOpen = false;
-  }
 }

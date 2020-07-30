@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="drawer-button" (click)="openDrawer()">
+  <div class="drawer-button" (click)="(isOpen = true)">
     <img src="/assets/menu-icon.svg">
   </div>
   <h1 class="logo">LOGO</h1>
@@ -33,5 +33,5 @@
     </ul>
   </nav>
   <a href="" class="user-icon" [style.background-image]="'url('+ '/assets/user-icon.png' +')'"></a>
-  <div class="bg-blur" (click)="closeDrawer()" [class.bg-blur--active]="isOpen"></div>
+  <div class="bg-blur" (click)="(isOpen = false)" [class.bg-blur--active]="isOpen"></div>
 </header>

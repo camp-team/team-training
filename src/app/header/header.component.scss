@@ -98,10 +98,7 @@ a {
     }
   }
   &__user {
-    background-color: #ccc;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: #ccc center/cover;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -178,10 +175,7 @@ a {
   }
   &__user {
     margin-right: 30px;
-    background-color: #ccc;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: #ccc center/cover;
     width: 16px;
     height: 16px;
     border-radius: 50%;

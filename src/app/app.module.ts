@@ -10,6 +10,9 @@ import { NewsComponent } from './news/news.component';
 import { PaginatorComponent } from './paginator/paginator.component';
 import { RelativetimePipe } from './pipe/relativetime.pipe';
 import { TrendingComponent } from './trending/trending.component';
+import { TopComponent } from './top/top.component';
+import { ArticleListComponent } from './article-list/article-list.component';
+import { ArticleDetailComponent } from './article-detail/article-detail.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,9 @@ import { TrendingComponent } from './trending/trending.component';
     PaginatorComponent,
     RelativetimePipe,
     CommentCardComponent,
+    TopComponent,
+    ArticleListComponent,
+    ArticleDetailComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

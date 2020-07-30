@@ -2,5 +2,8 @@
   <h1 class="hero__text hero__text--title">{{ hero.title }}</h1>
   <div class="hero__divider"></div>
   <h2 class="hero__text hero__text--body">{{ hero.body }}</h2>
-  <img class="hero__avatar" [src]="hero.avatarUrl" alt="avatar" />
+  <figure
+    class="hero__avatar"
+    [style.background-image]="'url(' + hero.avatarUrl + ')'"
+  ></figure>
 </div>

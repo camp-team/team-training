@@ -1,6 +1,6 @@
 <header class="header">
-  <div class="drawer-button" (click)="(isOpen = true)">
-    <img src="assets/menu-icon.svg" alt="メニューアイコン">
+  <div class="drawer-button" (click)="isOpen = true">
+    <img src="assets/header/menu-icon.svg" alt="メニューアイコン">
   </div>
   <h1 class="logo">LOGO</h1>
   <span class="spacer"></span>
@@ -8,7 +8,7 @@
     <h1 class="logo logo--sp-side">LOGO</h1>
     <ul class="global-nav__list">
       <li class="global-nav__item global-nav__item--home">
-        <a href=""><img src="assets/home-icon.svg" class="global-nav__img" alt="HOMEアイコン">HOME</a>
+        <a href=""><img src="assets/header/home-icon.svg" class="global-nav__img" alt="HOMEアイコン">HOME</a>
         <ul class="home-menu">
           <li class="home-menu__item"><a href="">WORLD NEWS</a></li>
           <li class="home-menu__item"><a href="">TRAVEL</a></li>
@@ -19,19 +19,19 @@
         </ul>
       </li>
       <li class="global-nav__item">
-        <a href=""><img src="assets/discover-icon.svg" class="global-nav__img" 　alt="DISCOVERYアイコン">DISCOVERY</a>
+        <a href=""><img src="assets/header/discover-icon.svg" class="global-nav__img" alt="DISCOVERYアイコン">DISCOVERY</a>
       </li>
       <li class="global-nav__item">
-        <a href=""><img src="assets/photos-icon.svg" class="global-nav__img" alt="PHOTOSアイコン">PHOTOS</a>
+        <a href=""><img src="assets/header/photos-icon.svg" class="global-nav__img" alt="PHOTOSアイコン">PHOTOS</a>
       </li>
       <li class="global-nav__item">
-        <a href=""><img src="assets/mail-icon.svg" class="global-nav__img" alt="CONTACTアイコン">CONTACT</a>
+        <a href=""><img src="assets/header/mail-icon.svg" class="global-nav__img" alt="CONTACTアイコン">CONTACT</a>
       </li>
       <li class="global-nav__item sp-only">
-        <a href=""><img src="assets/user-icon.png" class="global-nav__img" alt="PROFILEアイコン">PROFILE</a>
+        <a href=""><img src="assets/header/user-icon.png" class="global-nav__img" alt="PROFILEアイコン">PROFILE</a>
       </li>
     </ul>
   </nav>
-  <a href="" class="user-icon" [style.background-image]="'url('+ 'assets/user-icon.png' +')'"></a>
-  <div class="bg-blur" (click)="(isOpen = false)" [class.bg-blur--active]="isOpen"></div>
+  <a href="" class="user-icon" [style.background-image]="'url('+ 'assets/header/user-icon.png' +')'"></a>
+  <div class="bg-blur" (click)="isOpen = false" [class.bg-blur--active]="isOpen"></div>
 </header>

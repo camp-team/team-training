@@ -13,6 +13,8 @@ import { PaginatorComponent } from './paginator/paginator.component';
 import { RelativetimePipe } from './pipe/relativetime.pipe';
 import { TopComponent } from './top/top.component';
 import { TrendingComponent } from './trending/trending.component';
+import { DetailHeaderComponent } from './detail-header/detail-header.component';
+import { DetailHeroComponent } from './detail-header/detail-hero/detail-hero.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { TrendingComponent } from './trending/trending.component';
     TopComponent,
     ArticleListComponent,
     ArticleDetailComponent,
+    DetailHeaderComponent,
+    DetailHeroComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

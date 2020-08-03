@@ -1,0 +1,38 @@
+.small-card {
+  img {
+    width: 360px;
+    height: 210px;
+  }
+  &__title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  &__time {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  &__time-text {
+    font-size: 13px;
+    opacity: 0.3;
+    margin-top: 0px;
+    margin-left: 6px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .small-card {
+    &__container {
+      display: block;
+      margin: 0 auto;
+      width: 327px;
+    }
+    img {
+      width: 327px;
+      height: 180px;
+      display: block;
+    }
+    &__time {
+      justify-content: left;
+    }
+  }
+}

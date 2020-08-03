@@ -1,0 +1,32 @@
+<div class="comment">
+  <div class="comment__header">
+    <figure
+      class="comment__avatar"
+      [style.background-image]="'url(' + comment.avatarUrl + ')'"
+    ></figure>
+    <p class="comment__name">{{ comment.userName }}</p>
+  </div>
+  <p class="comment__body">{{ comment.body }}</p>
+  <div class="comment__updatedAt">
+    <img class="comment__time-icon" src="assets/images/time.svg" alt="" />
+    <p class="comment__time-text">{{ comment.updatedAt | relativetime }}</p>
+  </div>
+  <ng-container *ngIf="isPlaying; else thumbnail">
+    <ng-container *ngIf="comment?.videoUrl as videoUrl">
+      <video class="comment__video" [src]="videoUrl" autoplay controls></video>
+    </ng-container>
+  </ng-container>
+  <ng-template #thumbnail>
+    <figure
+      class="comment__thumbnail"
+      [style.background-image]="'url(' + comment?.thumbnailUrl + ')'"
+      (click)="start()"
+    >
+      <img
+        class="comment__video-play-btn"
+        src="assets/comment-card/playbutton.png"
+        alt="play button"
+      />
+    </figure>
+  </ng-template>
+</div>

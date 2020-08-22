@@ -8,6 +8,7 @@ import { BreadListComponent } from './bread-list/bread-list.component';
 import { CommentCardComponent } from './comment-card/comment-card.component';
 import { HeadingComponent } from './heading/heading.component';
 import { HeroComponent } from './hero/hero.component';
+import { HeaderComponent } from './header/header.component';
 import { NewsComponent } from './news/news.component';
 import { PaginatorComponent } from './paginator/paginator.component';
 import { RelativetimePipe } from './pipe/relativetime.pipe';
@@ -26,6 +27,7 @@ import { CardLargeComponent } from './card-large/card-large.component';
     NewsComponent,
     HeadingComponent,
     PaginatorComponent,
+    HeaderComponent,
     RelativetimePipe,
     CommentCardComponent,
     TopComponent,

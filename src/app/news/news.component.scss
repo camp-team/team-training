@@ -1,17 +1,23 @@
+@import 'mixins';
+
 * {
   box-sizing: border-box;
 }
 h2 {
   margin: 0;
 }
+h3 {
+  margin: 0;
+}
+h4 {
+  margin: 0;
+}
 p {
   margin: 0;
 }
 .news {
-  padding: 100px;
-  max-width: 600px;
-  max-height: 600px;
-  @media screen and (max-width: 750px) {
+  padding: calc(100 / 600 * 100%);
+  @include sp {
     padding: 0;
     margin: 0 auto;
   }
@@ -40,13 +46,13 @@ p {
 .content {
   max-width: 380px;
   margin-bottom: 40px;
-  @media screen and (max-width: 750px) {
+  @include sp {
     margin-bottom: 24px;
   }
   &__title {
     color: #fa6980;
     font-size: 16px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
   &__sub-title {
     font-size: 16px;

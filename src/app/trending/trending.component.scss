@@ -1,3 +1,5 @@
+@import 'mixins';
+
 *,
 *::before,
 *::after {
@@ -49,10 +51,10 @@
     font-weight: lighter;
   }
 }
-  @media screen and (max-width: 750px) {
-    .medium-card {
-      &__cover {
-        padding-bottom: calc(154 / 327 * 100%);
-      }
+@include sp {
+  .medium-card {
+    &__cover {
+      padding-bottom: calc(154 / 327 * 100%);
     }
   }
+}

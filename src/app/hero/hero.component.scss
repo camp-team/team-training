@@ -1,3 +1,5 @@
+@import 'mixins';
+
 a {
   text-decoration: none;
 }
@@ -53,7 +55,7 @@ img {
   }
 }
 
-@media (max-width: 750px) {
+@include sp {
   .hero {
     height: 388px;
   }

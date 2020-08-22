@@ -1,3 +1,5 @@
+@import 'mixins';
+
 .comment {
   max-width: 730px;
   &__header {
@@ -50,7 +52,7 @@
     border-radius: 6px;
     height: 300px;
     width: 100%;
-    @media screen and (max-width: 375px) {
+    @include sp {
       height: 180px;
     }
   }
@@ -65,7 +67,7 @@
     &:hover {
       cursor: pointer;
     }
-    @media screen and (max-width: 375px) {
+    @include sp {
       padding-top: 180px;
     }
   }

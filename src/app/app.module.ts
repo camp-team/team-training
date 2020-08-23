@@ -16,6 +16,7 @@ import { TopComponent } from './top/top.component';
 import { TrendingComponent } from './trending/trending.component';
 import { DetailHeaderComponent } from './detail-header/detail-header.component';
 import { DetailHeroComponent } from './detail-header/detail-hero/detail-hero.component';
+import { CardLargeComponent } from './card-large/card-large.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { DetailHeroComponent } from './detail-header/detail-hero/detail-hero.com
     ArticleDetailComponent,
     DetailHeaderComponent,
     DetailHeroComponent,
+    CardLargeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

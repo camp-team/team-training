@@ -1,14 +1,16 @@
+@import 'mixins';
+
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 640px;
+  grid-template-columns: minmax(50%, 1fr) minmax(auto, 600px);
   position: relative;
   &__bg {
     background: center/cover;
-    @media screen and (max-width: 750px) {
+    @include sp {
       background-size: 0;
     }
   }
-  @media screen and (max-width: 750px) {
+  @include sp {
     grid-template-columns: 1fr;
   }
   &__main {
@@ -18,7 +20,7 @@
     width: 100%;
     transform: translateY(-50%);
     background: center/0;
-    @media screen and (max-width: 750px) {
+    @include sp {
       position: static;
       transform: none;
       background-size: cover;
@@ -28,7 +30,7 @@
     position: relative;
     z-index: 10;
     background: white;
-    @media screen and (max-width: 750px) {
+    @include sp {
       padding: 40px 24px;
     }
   }
@@ -37,8 +39,8 @@
 .now-grid {
   display: grid;
   gap: 40px;
-  @media screen and (min-width: 750px) {
-    grid-template-columns: 760px 360px;
+  @include notSP {
+    grid-template-columns: minmax(auto, 760px) minmax(auto, 360px);
   }
 }
 
@@ -55,7 +57,7 @@
 .divider {
   height: 2px;
   background: #ebeded;
-  @media screen and (min-width: 750px) {
+  @include sp {
     display: none;
   }
 }
@@ -63,10 +65,10 @@
 .trend-grid {
   display: grid;
   gap: 40px;
-  @media screen and (min-width: 750px) {
+  @include notSP {
     grid-template-columns: repeat(3, 1fr);
   }
-  @media screen and (max-width: 750px) {
+  @include sp {
     > *:last-child {
       display: none;
     }

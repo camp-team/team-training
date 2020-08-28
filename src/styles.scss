@@ -1,5 +1,8 @@
+@import 'mixins';
+
 body {
   margin: 0;
+  padding-top: 50px;
   background: #f6f8f9;
 }
 
@@ -8,4 +11,9 @@ body {
   margin: 0 auto;
   padding: 0 24px;
   box-sizing: border-box;
+  &--sp-fit {
+    @include sp {
+      padding: 0;
+    }
+  }
 }

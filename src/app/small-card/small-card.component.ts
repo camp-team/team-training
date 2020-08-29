@@ -10,7 +10,7 @@ export class SmallCardComponent implements OnInit {
 
   constructor() {}
 
-  public readonly cards = [// listプロパティ
+  public readonly cards = [
     {img: 'assets/images/small01.png', date: '3h ago by Worldnews'},
     {img: 'assets/images/small02.png', date: '4h ago by Days'},
     {img: 'assets/images/small03.png', date: '3h ago by Monica'}

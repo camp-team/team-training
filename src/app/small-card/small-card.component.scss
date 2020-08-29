@@ -21,11 +21,9 @@
 }
 @media screen and (max-width: 750px) {
   .small-card {
-    &__container {
       display: block;
       margin: 0 auto;
       width: 327px;
-    }
     img {
       width: 327px;
       height: 180px;

@@ -1,7 +1,7 @@
 .small-card {
-  img {
-    width: 360px;
-    height: 210px;
+  &__img {
+    max-width: 100%;
+    max-height: 100%;
   }
   &__title {
     margin-top: 20px;
@@ -21,12 +21,12 @@
 }
 @media screen and (max-width: 750px) {
   .small-card {
-      display: block;
-      margin: 0 auto;
-      width: 327px;
-    img {
-      width: 327px;
-      height: 180px;
+    display: block;
+    margin: 0 auto;
+    width: 327px;
+    &__img {
+      max-width: 100%;
+      max-height: 100%;
       display: block;
     }
     &__time {

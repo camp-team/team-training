@@ -1,0 +1,45 @@
+.heading {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #202124;
+
+  &__title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: calc( 20 / 24 );
+    text-transform: uppercase;
+  }
+  &__nav {
+    display: flex;
+    margin-left: auto;
+    margin-right: -7px;
+  }
+  &__prev,
+  &__next {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    path {
+      fill: #202124;
+      transition: fill .4s;
+    }
+    &.disabled {
+      opacity: .3;
+      pointer-events: none;
+    }
+    &:not(.disabled):hover {
+      path {
+        fill: #FA6980;
+      }
+    }
+  }
+  &__prev {
+    margin-right: 18px;
+  }
+}

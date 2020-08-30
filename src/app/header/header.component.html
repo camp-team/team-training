@@ -1,0 +1,71 @@
+<header class="header">
+  <button class="sp-only header__btn-menu" (click)="isOpened = true">
+    <img src="assets/images/icon-menu.svg" alt="メニューを開く">
+  </button>
+  <p class="header__logo">
+    <a routerLink="/" (click)="isOpened = false">LOGO</a>
+  </p>
+  <div class="sp-only header__overlay" (click)="isOpened = false" [class.open]="isOpened"></div>
+  <div class="header__nav" [class.open]="isOpened">
+    <nav class="gnav">
+      <p class="sp-only gnav__logo">
+        <a routerLink="/" (click)="isOpened = false">LOGO</a>
+      </p>
+      <ul class="gnav__list">
+        <li class="gnav__item current">
+          <a routerLink="/" (click)="isOpened = false" class="gnav__link">
+            <img src="assets/images/icon-home.svg" alt="" class="sp-only gnav__icon">
+            Home
+          </a>
+          <div class="pc-only subnav">
+            <ul class="subnav__list">
+              <li class="subnav__item">
+                <a href="" class="subnav__link">World News</a>
+              </li>
+              <li class="subnav__item">
+                <a href="" class="subnav__link">Travel</a>
+              </li>
+              <li class="subnav__item current">
+                <a href="" class="subnav__link">Technology</a>
+              </li>
+              <li class="subnav__item">
+                <a href="" class="subnav__link">City</a>
+              </li>
+              <li class="subnav__item">
+                <a href="" class="subnav__link">Culture</a>
+              </li>
+              <li class="subnav__item">
+                <a href="" class="subnav__link">More…</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="gnav__item">
+          <a href="" class="gnav__link">
+            <img src="assets/images/icon-discover.svg" alt="" class=" sp-only gnav__icon">
+            Discovery
+          </a>
+        </li>
+        <li class="gnav__item">
+          <a href="" class="gnav__link">
+            <img src="assets/images/icon-photos.svg" alt="" class=" sp-only gnav__icon">
+            Photos
+          </a>
+        </li>
+        <li class="gnav__item">
+          <a href="" class="gnav__link">
+            <img src="assets/images/icon-contact.svg" alt="" class=" sp-only gnav__icon">
+            Contact
+          </a>
+        </li>
+        <li class="sp-only gnav__item">
+          <a href="" class="gnav__link gnav__profile">
+            <div class="gnav__user" style="background-image: url('assets/images/dummy-user.jpg');"></div>
+            <span>Profile</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <a href="" class="header__user" style="background-image: url('assets/images/dummy-user.jpg');"></a>
+</header>

@@ -1,59 +1,70 @@
-<form [formGroup]="form" (ngSubmit)="submit()">
-  <ng-container
-    *ngIf="
-      selectData.invalid && (selectData.dirty || selectData.touched);
-      else content
-    "
-  >
-    <label class="select-title" *ngIf="selectData.hasError('required')"
-      >Please select</label
+<div class="form-container">
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <ng-container
+      *ngIf="
+        selectData.invalid && (selectData.dirty || selectData.touched);
+        else content
+      "
     >
-    <select class="select-error" formControlName="selectData" required>
-      <option value="" disabled selected style="display: none;">Select…</option>
-      <option id="data" value="サンプル1">選択肢のサンプル1</option>
-      <option id="data" value="サンプル2">選択肢のサンプル2</option>
-      <option id="data" value="サンプル3">選択肢のサンプル3</option>
-      <option id="data" value="サンプル4">選択肢のサンプル4</option>
-      <option id="data" value="サンプル5">選択肢のサンプル5</option>
-    </select>
-  </ng-container>
+      <label class="select-title" *ngIf="selectData.hasError('required')"
+        >Please select</label
+      >
+      <select class="select-error" formControlName="selectData" required>
+        <option value="" disabled selected style="display: none;"
+          >Select…</option
+        >
+        <option id="data" value="サンプル1">選択肢のサンプル1</option>
+        <option id="data" value="サンプル2">選択肢のサンプル2</option>
+        <option id="data" value="サンプル3">選択肢のサンプル3</option>
+        <option id="data" value="サンプル4">選択肢のサンプル4</option>
+        <option id="data" value="サンプル5">選択肢のサンプル5</option>
+      </select>
+    </ng-container>
 
-  <ng-template #content>
-    <label for="data">Selet a data</label>
-    <select formControlName="selectData" required>
-      <option value="" disabled selected style="display: none;">Select…</option>
-      <option id="data" value="サンプル1">選択肢のサンプル1</option>
-      <option id="data" value="サンプル2">選択肢のサンプル2</option>
-      <option id="data" value="サンプル3">選択肢のサンプル3</option>
-      <option id="data" value="サンプル4">選択肢のサンプル4</option>
-      <option id="data" value="サンプル5">選択肢のサンプル5</option>
-    </select>
-  </ng-template>
+    <ng-template #content>
+      <label for="data">Selet a data</label>
+      <select formControlName="selectData" required>
+        <option value="" disabled selected style="display: none;"
+          >Select…</option
+        >
+        <option id="data" value="サンプル1">選択肢のサンプル1</option>
+        <option id="data" value="サンプル2">選択肢のサンプル2</option>
+        <option id="data" value="サンプル3">選択肢のサンプル3</option>
+        <option id="data" value="サンプル4">選択肢のサンプル4</option>
+        <option id="data" value="サンプル5">選択肢のサンプル5</option>
+      </select>
+    </ng-template>
 
-  <ng-container
-    *ngIf="
-      keywords.invalid && (keywords.dirty || keywords.touched);
-      else default
-    "
-  >
-    <label class="form-title" *ngIf="keywords.hasError('required')"
-      >Enter the first keywords</label
+    <ng-container
+      *ngIf="
+        keywords.invalid && (keywords.dirty || keywords.touched);
+        else default
+      "
     >
-    <input
-      class="form-error"
-      type="text"
-      formControlName="keywords"
-      autocomplete="of"
-      required
-    />
-  </ng-container>
+      <label class="form-title" *ngIf="keywords.hasError('required')"
+        >Enter the first keywords</label
+      >
+      <input
+        class="form-error"
+        type="text"
+        formControlName="keywords"
+        autocomplete="of"
+        required
+      />
+    </ng-container>
 
-  <ng-template #default>
-    <label>Enter the first keywords</label>
-    <input type="text" formControlName="keywords" autocomplete="of" required />
-  </ng-template>
+    <ng-template #default>
+      <label>Enter the first keywords</label>
+      <input
+        type="text"
+        formControlName="keywords"
+        autocomplete="of"
+        required
+      />
+    </ng-template>
 
-  <div class="search">
-    <input type="submit" value="SEARCH" class="submit" />
-  </div>
-</form>
+    <div class="search">
+      <input type="submit" value="SEARCH" class="submit" />
+    </div>
+  </form>
+</div>

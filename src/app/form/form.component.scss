@@ -1,9 +1,19 @@
+@import 'mixins';
+
+.form-container {
+  padding: 110px;
+  background-color: #ffffff;
+  @include sp {
+    padding: 40px 24px;
+  }
+}
+
 select {
   outline: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  width: 360px;
+  width: 100%;
   height: 40px;
   font-size: 13px;
   padding: 10px 15px;
@@ -46,9 +56,8 @@ label {
 }
 
 input {
-  padding: 14px 248px 13px 16px;
   outline: none;
-  width: 360px;
+  width: 100%;
   height: 40px;
   font-size: 13px;
   border-radius: 6px;
@@ -56,7 +65,9 @@ input {
   box-sizing: border-box;
   margin-bottom: 40px;
   color: #202124;
-  background: none transparent;
+  &:last-child {
+    margin-bottom: 0px;
+  }
   &:focus {
     border-color: #72acff;
   }
@@ -75,17 +86,18 @@ input {
 .form-title {
   color: #ff4d4d;
   font-size: 13px;
-  margin-bottom: 10px;
   font-weight: bold;
 }
 
-.submit {
-  padding: 0px;
+.search {
   display: inline-block;
-  width: 134px;
+}
+
+.submit {
+  padding: 16px 30px;
   height: 40px;
   border-radius: 6px;
-  font-size: 11pt;
+  font-size: 11px;
   font-weight: bold;
   text-align: center;
   cursor: pointer;

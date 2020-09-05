@@ -55,12 +55,6 @@
     }
   }
 
-  .spacer {
-    @include tablet {
-      display: none;
-    }
-  }
-
   .form {
     grid-area: form;
     position: relative;
@@ -72,19 +66,18 @@
       appearance: none;
       background-color: transparent;
       background-image: none;
-      border: 2px solid #fff;
+      border: 2px solid rgba(255, 255, 255, .1);
       border-radius: 6px;
       color: inherit;
       font-family: inherit;
       font-size: 1em;
-      padding: 0.4em 0.8em;
-      padding-left: 20px;
+      padding: 14px 35px 16px 20px;
       width: 100%;
-      color: #cbd0d3;
+      color: #fff;
       opacity: 50%;
     }
     input::placeholder {
-      color: #cbd0d3;
+      color: rgba(203, 208, 211, .5);
     }
     &__btn {
       box-sizing: border-box;

@@ -20,11 +20,3 @@
     margin-left: 6px;
   }
 }
-@media screen and (max-width: 750px) {
-  .small-card {
-    margin: 0 auto;
-    &__time {
-      justify-content: left;
-    }
-  }
-}

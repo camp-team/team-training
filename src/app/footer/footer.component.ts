@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  icons: string[] = ['instagram', 'twitter', 'facebook', 'web'];
+
   constructor() { }
 
   ngOnInit(): void {

@@ -20,6 +20,7 @@ import { DetailHeaderComponent } from './detail-header/detail-header.component';
 import { DetailHeroComponent } from './detail-header/detail-hero/detail-hero.component';
 import { CardLargeComponent } from './card-large/card-large.component';
 import { FooterComponent } from './footer/footer.component';
+import { SmallCardComponent } from './small-card/small-card.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { FooterComponent } from './footer/footer.component';
     CardLargeComponent,
     FormComponent,
     FooterComponent,
+    SmallCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],

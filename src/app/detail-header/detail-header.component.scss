@@ -20,14 +20,10 @@
       }
     }
     &--form {
-      background-color: grey;
+      background-color: #ffffff;
     }
     @include sp {
       max-width: 580px;
     }
   }
-}
-.placeholder {
-  display: block;
-  background: #ccc;
 }

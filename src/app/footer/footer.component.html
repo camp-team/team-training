@@ -1,0 +1,47 @@
+<div class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <p class="logo">LOGO</p>
+      <nav class="navs">
+        <ul class="navs__nav">
+          <li><a href="">Home</a></li>
+          <li><a href="">Discovery</a></li>
+          <li><a href="">Photos</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <ul class="navs__nav">
+          <li><a href="">About</a></li>
+          <li><a href="">Help</a></li>
+          <li><a href="">Terms</a></li>
+          <li><a href="">Guidlines</a></li>
+        </ul>
+        <ul class="navs__nav">
+          <li><a href="">Testimonials</a></li>
+          <li><a href="">Advertise</a></li>
+          <li><a href="">Integrations</a></li>
+          <li><a href="">Careers</a></li>
+        </ul>
+      </nav>
+      <div class="form">
+        <input class="form__input" type="text" placeholder="Email" />
+        <div class="form__btn">
+          <a href=""><img src="assets/images/send.svg" alt="" /></a>
+        </div>
+        <p>
+          Stay in touch with us for the freshest products!
+        </p>
+      </div>
+      <ul class="sns">
+        <ng-container *ngFor="let icon of icons">
+          <li>
+            <a href="">
+              <div class="sns__icon">
+                <img src="assets/images/{{ icon }}.svg" alt="" />
+              </div>
+            </a>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+  </div>
+</div>

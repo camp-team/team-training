@@ -1,8 +1,6 @@
-<div *ngFor="let card of cards" class="small-card">
-  <div class="small-card__img">
-    <div class="small-card__img">
-      <img src={{card.img}} alt="">
-    </div>
+<div class="small-card-list">
+  <div *ngFor="let card of cards" class="small-card">
+    <img class="small-card__img" src={{card.img}} alt="">
     <h3 class="small-card__title">Small title</h3>
     <div class="small-card__time">
       <a>
@@ -17,3 +15,4 @@
       </p>
     </div>
   </div>
+</div>

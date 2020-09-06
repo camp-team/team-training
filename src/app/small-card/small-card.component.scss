@@ -1,8 +1,8 @@
 .small-card {
   font-family: Helvetica;
   &__img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
   }
   &__title {
     margin-top: 20px;
@@ -23,12 +23,6 @@
 @media screen and (max-width: 750px) {
   .small-card {
     margin: 0 auto;
-    width: 327px;
-    &__img {
-      max-width: 100%;
-      max-height: 100%;
-      display: block;
-    }
     &__time {
       justify-content: left;
     }

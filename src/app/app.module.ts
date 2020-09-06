@@ -19,6 +19,7 @@ import { TrendingComponent } from './trending/trending.component';
 import { DetailHeaderComponent } from './detail-header/detail-header.component';
 import { DetailHeroComponent } from './detail-header/detail-hero/detail-hero.component';
 import { CardLargeComponent } from './card-large/card-large.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { CardLargeComponent } from './card-large/card-large.component';
     DetailHeroComponent,
     CardLargeComponent,
     FormComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],

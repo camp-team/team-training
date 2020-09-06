@@ -1,11 +1,13 @@
 @import 'mixins';
+:host {
+  width: 100%;
+}
 
 .form-container {
-  padding: 110px;
+  max-width: calc(360px + 48px);
   background-color: #ffffff;
-  @include sp {
-    padding: 40px 24px;
-  }
+  padding: 40px 24px;
+  margin: 0 auto;
 }
 
 select {
